@@ -19,18 +19,26 @@
             '2019' => [],
             '2020' => [],
         ];
+
+        $diasSaltar = [1,6];
         
         $unDiaMas = $fechaConTimestamp+86400;
         echo "<br>".$unDiaMas;
-        echo "<br>".strftime("%d-%m-%Y",$unDiaMas);
-        echo "<br><br>";
-        $fecha1 = strtotime('2010-10-20'); 
-$fecha2 = strtotime('2010-10-25'); 
-for($fecha1;$fecha1<=$fecha2;$fecha1=strtotime('+1 day ' . date('Y-m-d',$fecha1))){ 
-    if((strcmp(date('D',$fecha1),'Sun')!=0) || (strcmp(date('D',$fecha1),'Sat')!=0)){
-        echo date('Y-m-d D',$fecha1) . '<br />'; 
-    }
-}
+        echo "Convertimos el timestap a formato de fecha: <br>";
+        $fechaUnDiaMas =  strftime("%d-%m-%Y",$unDiaMas);
+        echo $fechaUnDiaMas."<br>";
+        $fecha =  date("l", $unDiaMas);
+        echo $fecha."<br>";
+        if($fecha == 'Sunday'){
+            echo "Es domingo y no debe de guardarse, deberá de ser un día mas..<br>";
+            $unDiaMas+=86400;
+            echo $unDiaMas."<br>";
+            $fechaNoDomingo = strftime("%d-%m-%Y",$unDiaMas);
+            echo $fechaNoDomingo."<br>";
+        } else {
+            echo "No es domingo, asi que se queda el día calculado....<br>";
+        }
+        
 
     ?>
 </body>
