@@ -1,0 +1,9 @@
+.caja {
+    font-size: 22px;
+}
+
+p {
+    font-size: 1em;
+    border: 0.1em solid black;
+    padding: 1em;
+}

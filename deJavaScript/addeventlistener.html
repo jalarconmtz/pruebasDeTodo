@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddEventListener</title>
+</head>
+<body>
+
+    <div id="container">
+        Contenido a mostrar
+    </div>
+    
+<script>
+    //seleccionamos el objeto y le pasamos un coler
+    const container = document.getElementById('container');
+    container.style.backgroundColor = "blue";
+
+    // creamos la función que va a cambiar el color de fondo del div
+    function cambiaColor(event){
+        event.target.style.backgroundColor = 'red';
+    }
+
+    // creamos la función que va a cambiar el color de fondo del div
+    function cambiaColorDejar(event){
+        event.target.style.backgroundColor = 'green';
+    }
+
+    // código que cambiará el color de fondo cuando pasa el mouse
+    container.addEventListener("mouseover", cambiaColor);
+        
+    // código que cambiará el color de fondo cuando deja de estar el mouse encima
+    container.addEventListener("mouseleave", cambiaColorDejar);
+</script>
+
+</body>
+</html>

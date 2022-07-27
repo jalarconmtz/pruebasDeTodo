@@ -5,7 +5,7 @@
 <body>
     <?php
 
-        $ultimaFecha = '16-11-2019';
+        $ultimaFecha = '28-05-2019';
         echo $ultimaFecha ;
         echo "<br>";
         // cambiamos la fecha a timestap
@@ -38,6 +38,8 @@
         } else {
             echo "No es domingo, asi que se queda el día calculado....<br>";
         }
+
+        //Insercion del codigo para continuar en DG
         
 
     ?>

@@ -1,0 +1,35 @@
+/** Dispositivos pequeños lasnscape telefonos */
+@media (min-width: 576px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+/** Dispositivos medianos ltablest */
+@media (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/** Dispositivos grandes pc */
+@media (min-width: 992px) {
+    body {
+        background-color: red;
+    }
+}
+
+
+/** Dispositivos extragrandes pc */
+@media (min-width: 1200px) {
+    body {
+        background-color: green;
+    }
+}
+
+/** Dispositivos extrapequeños pc */
+@media (max-width: 575px) {
+    body {
+        background-color: gray;
+    }
+}

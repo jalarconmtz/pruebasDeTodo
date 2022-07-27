@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos de flexbox 8</title>
+    <style>
+        @media (min-width: 768px) {
+            .contenedor {
+                display: flex;
+                /**align-items: stretch; */
+                /**flex-direction: column;*/
+            }
+
+            .contenedor-2 {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+
+            .content-caja {
+                flex-basis: 25%;
+            }
+
+        }
+
+        .contenedor-3 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+
+        .contenedor div, .contenedor-2 div, .contenedor-3 div {
+            border: 1px #ccc solid;
+            padding: 12px;
+            background: #FAFAFA;
+        }
+
+        .caja-1 {
+            flex: 2;
+            order: 2
+        }
+
+        .caja-2 {
+            flex: 4;
+            order: 3;
+        }
+
+        .caja-3 {
+            flex: 2;
+            order: 1;
+        }
+        
+        .content-caja-3 {
+            flex-basis: 15%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+		<div class="caja-1">
+			<h3>Caja uno</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi! consectetur adipisicing elit. Tenetur, excepturi!</p>
+		</div>
+		<div class="caja-2">
+			<h3>Caja dos</h3>
+			<p>Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="caja-3">
+			<h3>Caja tres</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi!</p>
+		</div>
+    </div>
+
+    <div class="contenedor-2">
+		<div class="content-caja">
+			<h3>Caja 4</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi! consectetur adipisicing elit. Tenetur, excepturi!</p>
+		</div>
+		<div class="content-caja">
+			<h3>Caja 5</h3>
+			<p>Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="content-caja">
+			<h3>Caja 6</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi!</p>
+		</div>
+    </div>
+
+    <div class="contenedor-3">
+        <div class="content-caja-3">
+            <h3>Caja 7</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi! consectetur adipisicing elit. Tenetur, excepturi!</p>
+        </div>
+        <div class="content-caja-3">
+            <h3>Caja 8</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="content-caja-3">
+            <h3>Caja 9</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi!</p>
+        </div>
+
+        <div class="content-caja-3">
+            <h3>Caja 10</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi! consectetur adipisicing elit. Tenetur, excepturi!</p>
+        </div>
+        <div class="content-caja-3">
+            <h3>Caja 11</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="content-caja-3">
+            <h3>Caja 12</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, excepturi!</p>
+        </div>
+    
+    </div>
+
+</body>
+</html>

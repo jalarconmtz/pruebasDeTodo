@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    
+<link rel="stylesheet" href="css/edito.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <nav v-bind:class="active" v-on:click.prevent>
+            <!-- muestra el menu que tesa activado -->
+            <a href="#" class="home" v-on:click="makeActive('home')"></a>
+            <a href="#" class="project" v-on:click="makeActive('project')"></a>
+            <a href="#" class="services" v-on:click="makeActive('services')"></a>
+            <a href="#" class="contacto" v-on:click="makeActive('contacto')"></a>            
+        </nav>
+
+        <p>Has elegido {{active}}</p>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/editor.js"></script>
+
+</body>
+
+
+
+</html>
