@@ -22,24 +22,29 @@ class Persona {
     public $nombre;
     public $apPaterno;
     public $apMaterno;
-    public $edad;  
+    public $edad;
 
+    public function nombreDeLaPersona() {
+        $nombreCompleto = $this->nombre." ".$this->apPaterno." ".$this->apMaterno;
+        return $nombreCompleto;
+    }
+    
+    public function edadPersona() {
+        return $this->edad;
+    }
 }
 
-// creamos el objeto de la clase persona
-$persona_uno = new Persona();
-// podemos definir las caracteristicas de la persona de la sig manera
-$persona_uno->nombre = "Juan";
-$persona_uno->apPaterno = "Sánchez";
-$persona_uno->apMaterno = "García";
-$persona_uno->edad = "30";
-// ahora podemos mostrar las características que se han definido del objeto
-echo "Nombre: ".$persona_uno->nombre;
-echo "<br>";
-echo "Apellidos :".$persona_uno->apPaterno." ".$persona_uno->apMaterno;
-echo "<br>";
-echo "Edad : ".$persona_uno->edad;
+// creamos un objeto de la clase persona
+$unaPersona =  new Persona();
+// agregamos valores a las propiedad del objeto
+$unaPersona->nombre = "Cecilia";
+$unaPersona->apPaterno = "Luna";
+$unaPersona->apMaterno = "Sierra";
+$unaPersona->edad = 35;
+// por medio de los métodos declarados dentro de la clase, podemos obtener valores
 
-
+echo "Nombre completo desde un método: ".$unaPersona->nombreDeLaPersona();
+echo "<br>";
+echo "Edad obtenida desde un método: ".$unaPersona->edadPersona();
 
 ?>
