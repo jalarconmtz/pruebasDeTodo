@@ -6,7 +6,7 @@ function fetchData(urlApi, callback) {
     let xhttp = new XMLHttpRequest();
     xhttp.open('GET', urlApi, true);
     xhttp.onreadystatechange = function (event) {
-        if (xhttp.onreadystate === 4) {
+        if (xhttp.readyState === 4) {
             if(xhttp.status === 200) {
                 callback(null, JSON.parse(xhttp.responseText));
             }else {

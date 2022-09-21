@@ -4,7 +4,6 @@
  * Progranación orientada a objetos
  */
 //Las clases nos permiten agrupar información y acciones que podemos ejecutar con dicha información
-// que es una clase en php
 
 /**
  * public quiere decir que la propiedad se puede acceder y modificar fuera 
